@@ -114,6 +114,15 @@
             "SASaleList",
             "SASaleObjectPage"
           ]
+        },
+        {
+          "name": "SASale__SASoldObjectPage",
+          "pattern": "SASale({key})/_SASold({_SASoldKey}):?query:",
+          "target": [
+            "SASaleList",
+            "SASaleObjectPage",
+            "SASale__SASoldObjectPage"
+          ]
         }
       ],
       "targets": {
@@ -152,11 +161,31 @@
           "options": {
             "settings": {
               "editableHeaderContent": false,
-              "contextPath": "/SASale"
+              "contextPath": "/SASale",
+              "navigation": {
+                "_SASold": {
+                  "detail": {
+                    "route": "SASale__SASoldObjectPage"
+                  }
+                }
+              }
             }
           },
           "controlAggregation": "midColumnPages",
           "contextPattern": "/SASale({key})"
+        },
+        "SASale__SASoldObjectPage": {
+          "type": "Component",
+          "id": "SASale__SASoldObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "controlAggregation": "endColumnPages",
+          "options": {
+            "settings": {
+              "navigation": {},
+              "contextPath": "/SASale/_SASold"
+            }
+          },
+          "contextPattern": "/SASale({key})/_SASold({_SASoldKey})"
         }
       }
     },

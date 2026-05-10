@@ -34,7 +34,6 @@ server:
           - path: /sap
             url: https://7181185d-00d2-4490-ac37-c873482b9b74.abap.eu10.hana.ondemand.com
             destination: abap-cloud-abap-rs-ext-dev-dev
-            authenticationType: reentranceTicket # SAML support for vscode
     - name: sap-fe-mockserver
       beforeMiddleware: csp
       configuration:

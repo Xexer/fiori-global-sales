@@ -1112,11 +1112,6 @@
                         <PropertyPath>PartnerNumber</PropertyPath>
                     </Collection>
                 </Annotation>
-                <Annotation Term="SAP__common.SAPObjectNodeType">
-                    <Record>
-                        <PropertyValue Property="Name" String="ZBS_GlobalSale"/>
-                    </Record>
-                </Annotation>
                 <Annotation Term="SAP__UI.Facets">
                     <Collection>
                         <Record Type="SAP__UI.ReferenceFacet">
@@ -1613,7 +1608,6 @@
                         <PropertyPath>LocalLastChangedAt</PropertyPath>
                     </Collection>
                 </Annotation>
-                <Annotation Term="SAP__UI.CreateHidden"/>
             </Annotations>
             <Annotations Target="SAP__self.SASaleType/_SAInfo">
                 <Annotation Term="SAP__common.Composition"/>
