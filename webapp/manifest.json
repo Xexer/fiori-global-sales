@@ -168,6 +168,20 @@
                     "route": "SASale__SASoldObjectPage"
                   }
                 }
+              },
+              "content": {
+                "body": {
+                  "sections": {
+                    "RichTextEditorFragment": {
+                      "template": "swh.test.zbsglobalsales.ext.fragment.RichTextEditorFragment",
+                      "position": {
+                        "placement": "After",
+                        "anchor": "idDifference"
+                      },
+                      "title": "Information"
+                    }
+                  }
+                }
               }
             }
           },
