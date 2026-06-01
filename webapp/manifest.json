@@ -60,7 +60,10 @@
         "sap.m": {},
         "sap.ui.core": {},
         "sap.fe.templates": {},
-        "sap.f": {}
+        "sap.f": {},
+        "sap.nw.core.applogs.lib.reuse": {
+          "lazy": true
+        }
       }
     },
     "contentDensities": {
@@ -179,6 +182,23 @@
                         "anchor": "idDifference"
                       },
                       "title": "Information"
+                    },
+                    "ApplicationLogComponent": {
+                      "title": "Data Validation",
+                      "embeddedComponent": {
+                        "name": "sap.nw.core.applogs.lib.reuse.applogs",
+                        "settings": {
+                          "logHandle": "{LoggingId}",
+                          "tableType": "ResponsiveTable",
+                          "showHeader": false,
+                          "showFilterBar": false,
+                          "tableTitle": "More ..."
+                        }
+                      },
+                      "position": {
+                        "placement": "After",
+                        "anchor": "idGeneral"
+                      }
                     }
                   }
                 }

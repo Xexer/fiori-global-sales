@@ -8,13 +8,12 @@
     "sapui5"
   ],
   "main": "webapp/index.html",
-  "dependencies": {},
   "devDependencies": {
-    "@ui5/cli": "^4.0.33",
-    "@sap/ux-ui5-tooling": "1",
     "@sap-ux/eslint-plugin-fiori-tools": "^9.0.0",
+    "@sap-ux/ui5-middleware-fe-mockserver": "^2.4.13",
+    "@sap/ux-ui5-tooling": "1",
+    "@ui5/cli": "^4.0.33",
     "eslint": "^9",
-    "@sap-ux/ui5-middleware-fe-mockserver": "2",
     "rimraf": "^5.0.5"
   },
   "scripts": {
