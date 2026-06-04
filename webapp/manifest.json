@@ -63,6 +63,9 @@
         "sap.f": {},
         "sap.nw.core.applogs.lib.reuse": {
           "lazy": true
+        },
+        "sap.nw.core.changedocs.lib.reuse": {
+          "lazy": true
         }
       }
     },
@@ -199,6 +202,14 @@
                         "placement": "After",
                         "anchor": "idGeneral"
                       }
+                    },
+                    "ChangeDocument": {
+                      "template": "swh.test.zbsglobalsales.ext.fragment.ChangeDocument",
+                      "position": {
+                        "placement": "After",
+                        "anchor": "idAdmin"
+                      },
+                      "title": "Changes"
                     }
                   }
                 }
@@ -228,6 +239,15 @@
       "type": "XML",
       "async": true,
       "id": "appRootView"
+    },
+    "extends": {
+      "extensions": {
+        "sap.ui.controllerExtensions": {
+          "sap.fe.templates.ObjectPage.ObjectPageController": {
+            "controllerName": "swh.test.zbsglobalsales.ext.controller.ChangeDocumentExtension"
+          }
+        }
+      }
     }
   },
   "sap.fiori": {
