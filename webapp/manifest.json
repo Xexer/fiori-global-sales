@@ -163,7 +163,7 @@
                       "visible": true,
                       "enabled": true,
                       "requiresSelection": false,
-                      "text": "Upload File"
+                      "text": "{i18n>uploadFile}"
                     }
                   }
                 }
@@ -198,10 +198,10 @@
                         "placement": "After",
                         "anchor": "idDifference"
                       },
-                      "title": "Information"
+                      "title": "{i18n>information}"
                     },
                     "ApplicationLogComponent": {
-                      "title": "Data Validation",
+                      "title": "{i18n>applLogCustomSection}",
                       "embeddedComponent": {
                         "name": "sap.nw.core.applogs.lib.reuse.applogs",
                         "settings": {
@@ -209,7 +209,7 @@
                           "tableType": "ResponsiveTable",
                           "showHeader": false,
                           "showFilterBar": false,
-                          "tableTitle": "More ..."
+                          "tableTitle": "{i18n>applLogTableHeader}"
                         }
                       },
                       "position": {
@@ -223,7 +223,7 @@
                         "placement": "After",
                         "anchor": "idAdmin"
                       },
-                      "title": "Changes"
+                      "title": "{i18n>changes}"
                     }
                   }
                 }
