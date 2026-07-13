@@ -34,6 +34,27 @@
           "odataVersion": "4.0"
         }
       }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "ZBS_DEMO_GSALE-manage": {
+          "semanticObject": "ZBS_DEMO_GSALE",
+          "action": "manage",
+          "title": "{{ZBS_DEMO_GSALE-manage.flpTitle}}",
+          "subTitle": "{{ZBS_DEMO_GSALE-manage.flpSubtitle}}",
+					"info": "... from the Manifest",
+					"icon": "sap-icon://travel-expense-report",
+					"indicatorDataSource": {
+						"dataSource": "mainService",
+						"path": "SASale/$count",
+						"refresh": 10
+					},          
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
     }
   },
   "sap.ui": {
