@@ -17,8 +17,8 @@ server:
           url: https://ui5.sap.com
         backend:
           - path: /sap
-            url: 
-            destination: 
+            url:
+            destination:
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
@@ -30,3 +30,8 @@ server:
       configuration:
         flp:
           theme: sap_horizon
+builder:
+  resources:
+    excludes:
+      - /test/**
+      - /localService/**
