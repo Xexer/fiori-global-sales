@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is the Sales App that's an example from the RAP Examples 7 series.
+This is the Sales App that's an example from the "RAP Examples 7" series.
 
 ## Links
 
