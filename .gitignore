@@ -8,4 +8,7 @@ mta-*
 resources
 archive.zip
 .*_mta_build_tmp
+.appGenInfo.json
 ui5-deploy.yaml
+ui5-local.yaml
+ui5-mock.yaml
